@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+    background-color: #fcabb2;
+
+}
+
+a {
+    color: #b42a2a;
+    text-decoration: none;
+}
+
+/* 外部字体 订婚书用 */
+@font-face {
+    font-family: 'Mili';
+    src: url('./汉仪风波米粒\ 繁.ttf');
+}
+
+
+/* 外部字体 头部标题用 告白文章用 */
+@font-face {
+    font-family: 'Dingding';
+    src: url('./钉钉进步体.ttf');
+}
+
+/* 外部字体 正文标题用 */
+@font-face {
+    font-family: 'xiao';
+    src: url('./九重霄.ttf');
+}
+
+
+
+
+
+/* 顶部盒子 */
+.recall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0px auto; */
+    height: 150px;
+    /* width: 360px; */
+    background-color: #eee;
+}
+
+/* 头部标题 */
+.recall h2 {
+    line-height: 150px;
+    font-size: 24px;
+    color: rgb(219, 112, 130);
+    /* 外部字体 */
+    font-family: 'Dingding';
+}
+
+/* 头像 */
+.recall img {
+    /* margin: 0 auto; */
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    /* background-color: rgb(219, 112, 130); */
+    margin: 0px 20px;
+}
+
+
+/* <h2>标题 */
+.headline {
+    font-size: 24px;
+    line-height: 64px;
+    text-align: center;
+    color: #eee;
+    /* 外部字体 */
+    font-family: 'xiao'
+}
+
+/* 告白文章盒子 */
+.article {
+    /* width: 350px; */
+    width: 95vw;
+    /* height: auto; */
+    background-color: #f090ab;
+    margin: 0 auto 10px;
+    padding: 20px;
+    color: #eee;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------ 
+5月4日--求婚篇
+------------------ */
+
+
+
+
+
+
+
+
+/* 求婚文章内容 */
+.box .article p {
+    text-indent: 2em;
+    font-family: 'Dingding';
+}
+
+/* 求婚视频盒子 */
+.box .vid {
+    display: flex;
+    justify-content: space-between;
+    /* width: 350px; */
+    width: 95vw;
+    /* height: 180px; */
+    /* height: auto; */
+    /* background-color: #fcabb2; */
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* 求婚视频 */
+.vid1 {
+    /* width: 110px; */
+    width: 95vw;
+    /* height: auto; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* ------------------ 
+10月15日--订婚篇
+------------------ */
+
+/* 图片id="pic"旋转木马特效在：muma.css */
+
+/* 婚书文章盒子 */
+.engagement {
+    writing-mode: vertical-rl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    height: auto;
+    /* background-color: #c3272b; */
+    background-image: url(1.png);
+    background-size: 100% 100%;
+    /* background-position: 0px 0px; */
+    margin: 10px auto;
+    margin-bottom: 10px;
+    padding: 20px;
+
+
+
+
+
+    font-family: 'Mili';
+
+
+    color: #99371e;
+    line-height: 24px;
+    /* text-shadow: 3px 3px 3px #767d09; */
+
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.eng {
+    display: flex;
+
+}
+
+.eng .span1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.eng .span2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.engagement img {
+    width: 110px;
+    padding-left: -10px;
+    border: 1px solid #767d09;
+}
+
+/* ------------------ 
+正月初九--结婚篇
+------------------ */
+.marriedImg {
+    margin: 0px auto;
+    width: 95vw;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); */
+
+}
+
+.marriedImg img {
+    width: 95vw;
+    margin: 0px auto;
+    border-radius: 3px;
+}
+
+
+
+/* 底部格式 */
+.end {
+    margin-top: 10px;
+    width: auto;
+    height: 100px;
+    background-color: #eee;
+    line-height: 30px;
+    text-align: center;
+}
+
+.end div {
+    padding-top: 20px;
+}

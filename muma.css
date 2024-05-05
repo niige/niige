@@ -1,0 +1,89 @@
+/* 旋转木马特效 */
+.bgc {
+    width: 100vw;
+    height: 220px;
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    /* background-color: #000; */
+
+    /* 开启透视，有一种近大远小的感觉 */
+    perspective: 1500px;
+    /* perspective: 1500px; */
+}
+
+#pic {
+    /* margin-top: 500px; */
+    display: flex;
+    margin: 10px auto 0px;
+    width: 150px;
+    height: auto;
+
+    /* 开启3D视角 */
+    transform-style: preserve-3d;
+
+    /* 60s完成动画。linear：匀速线性播放，infinite：循环播放 */
+    animation: action 50s linear infinite;
+}
+
+#pic:hover {
+    /* 鼠标放在照片上会出现小手样式 */
+    cursor: pointer;
+    /* 鼠标放在照片上面会暂停播放 */
+    animation-play-state: paused;
+}
+
+/* 加一个动画，让照片旋转起来，action：是起的名字 */
+@keyframes action {
+    form {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+
+}
+
+#pic img {
+    /* 让照片重叠起来 */
+    position: absolute;
+    /* width: 350px;
+    height: 200px; */
+    width: 150px;
+    height: auto;
+
+    /* 开启倒影，below：反射方向在下方，图片距离倒影1px。transparent 10%开启透明色：前10%是透明的，之后90%是一个rgba的一个渐变色。 */
+    -webkit-box-reflect: below 1px -webkit-linear-gradient(transparent 10%, rgba(255, 255, 255, 0.3));
+}
+
+/* 以下是对每张照片进行位置转换 */
+#pic img:nth-child(1) {
+    /* 第一张不需要旋转，只需要其沿着z轴进行平移。 */
+    transform: translateZ(150px);
+}
+
+#pic img:nth-child(2) {
+    /* 第二张需要旋转60度，之后沿着z轴进行平移 */
+    transform: rotateY(60deg) translateZ(150px);
+}
+
+#pic img:nth-child(3) {
+    /* 第三张需要旋转120度，之后沿着z轴进行平移 */
+    transform: rotateY(120deg) translateZ(150px);
+}
+
+#pic img:nth-child(4) {
+    /* 第四张需要旋转180度，之后沿着z轴进行平移 */
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+#pic img:nth-child(5) {
+    /* 第五张需要旋转240度，之后沿着z轴进行平移 */
+    transform: rotateY(240deg) translateZ(150px);
+}
+
+#pic img:nth-child(6) {
+    /* 第六张需要旋转300度，之后沿着z轴进行平移 */
+    transform: rotateY(300deg) translateZ(150px);
+}

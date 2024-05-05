@@ -1,0 +1,142 @@
+/* <!-- 接婚电子相册--照片墙 --> */
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* .photoBgc {
+    background-color: #000;
+} */
+
+/* 外部字体 头部标题用 告白文章用 */
+@font-face {
+    font-family: 'Dingding';
+    src: url('./钉钉进步体.ttf');
+}
+
+
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 220px;
+    border-radius: 3px;
+    margin: 20px auto;
+    background-color: #ac4624;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 相册头部标题 */
+.photo h2 {
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #eee;
+    /* background-color: #f090ab; */
+    /* 外部字体 */
+    font-family: 'Dingding';
+}
+
+/* 相册底部盒子 */
+.DisBot {
+    width: 350px;
+    height: 180px;
+    display: flex;
+    /* flex-direction: column; */
+
+
+    /* background-color: #f090ab; */
+    /* margin: 0 auto; */
+    /* border-radius: 10px; */
+    /* margin-top: 50px; */
+}
+
+
+
+/* 大图 */
+.photo .imgshow {
+    display: flex;
+    flex-direction: column;
+    /* width: 110px; */
+    /* flex: 3; */
+    /* height: auto; */
+    /* margin: 10px auto -10px; */
+    /* border-radius: 5px; */
+    /* 溢出隐藏 */
+    overflow: hidden;
+
+}
+
+.imgshow img {
+    width: 270px;
+
+}
+
+/* 按钮小图 */
+.photo .btnbox {
+    /* display: flex;
+    flex-direction: column; */
+    /* flex: 1; */
+    /* height: auto; */
+    /* margin: 10px auto -10px; */
+    /* border-radius: 5px; */
+    /* 溢出滚动：溢出才显示滚动条位置 */
+    overflow: auto;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.photo .btnbox img {
+    width: 80px;
+    margin-bottom: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* .DisBot {
+    display: flex;
+
+}
+
+
+
+.photo .imgshow {
+    flex: 1;
+    /* width: 250px;
+    height: auto; */
+/* 溢出滚动：溢出才显示滚动条位置 */
+/* overflow: auto;
+} */
+
+/* .imgshow>li>img {
+    /* display: flex; */
+/* width: 250px;
+    height: auto; */
+/* }  */
+
+/* .photo>.DisBot>.btnbox>li>a>img {
+    width: 250px;
+    height: auto;
+} */
